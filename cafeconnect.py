@@ -76,7 +76,7 @@ def analysis_taste(df):
 
     test = f_oneway(below, above)
     print(test)
-    """
+    
     regression_taste_altitude = pd.DataFrame(columns=["altitude", "taste"])
     regression_taste_altitude.altitude = x
     regression_taste_altitude.taste = y
@@ -84,7 +84,7 @@ def analysis_taste(df):
     regression_taste_altitude = regression_taste_altitude[(regression_taste_altitude < 5000).all(1)]
 
     regress(regression_taste_altitude.altitude,regression_taste_altitude.taste)
-    """
+    
 
 
 
